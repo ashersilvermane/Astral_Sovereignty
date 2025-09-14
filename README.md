@@ -1,6 +1,6 @@
 Astral Sovereignty VTuber Company Website
 
-Welcome to the official website for Astral Sovereignty, a cosmic-themed VTuber company showcasing virtual knights who light up the virtual universe with their streams and content. This single-page website features a responsive design with a starry aesthetic, built using HTML, Tailwind CSS, and JavaScript.
+Welcome to the official website for Astral Sovereignty, a Astral-themed VTuber company showcasing virtual knights who light up the virtual universe with their streams and content. This single-page website features a responsive design with a starry aesthetic, built using HTML, Tailwind CSS, and JavaScript.
 
 Table of Contents
 
