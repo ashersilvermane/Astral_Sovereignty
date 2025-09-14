@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astral Sovereignty - VTuber Company</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #1a202c, #2d3748);
+            color: #e2e8f0;
+            font-family: 'Arial', sans-serif;
+        }
+        .hero-bg {
+            background: url('https://source.unsplash.com/random/1920x1080?space,stars') no-repeat center center/cover;
+            height: 100vh;
+        }
+        .centerpiece-bg {
+            background: url('https://source.unsplash.com/random/800x600?nebula') no-repeat center center/cover;
+            position: relative;
+        }
+        .centerpiece-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7); /* Subtle overlay for readability */
+            z-index: 1;
+        }
+        .centerpiece-bg > * {
+            position: relative;
+            z-index: 2;
+        }
+        .talent-bg {
+            background: url('https://source.unsplash.com/random/1920x1080?galaxy,stars') no-repeat center center/cover;
+            background-attachment: fixed;
+            position: relative;
+        }
+        .talent-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7); /* Subtle overlay for readability */
+            z-index: 1;
+        }
+        .talent-bg > * {
+            position: relative;
+            z-index: 2;
+        }
+        .talent-card {
+            transition: transform 0.3s ease;
+        }
+        .talent-card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-gray-900 py-4 shadow-lg">
+        <nav class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold text-purple-400">Astral Sovereignty</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="hover:text-purple-400 transition">Home</a></li>
+                <li><a href="#talents" class="hover:text-purple-400 transition">Talents</a></li>
+                <li><a href="#contact" class="hover:text-purple-400 transition">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg flex items-center justify-center text-center">
+        <div class="centerpiece-bg p-10 rounded-lg">
+            <h2 class="text-5xl font-extrabold text-white mb-4">Welcome to Astral Sovereignty</h2>
+            <p class="text-xl text-gray-300 mb-6">Discover our cosmic VTuber talents lighting up the virtual universe!</p>
+            <a href="#talents" class="bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700 transition">Meet Our Talents</a>
+        </div>
+    </section>
+
+    <!-- Talents Section -->
+    <section id="talents" class="py-16 talent-bg">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">Meet Our Talents</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="talent-card bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold text-purple-400">TBA</h3>
+                    <p class="text-gray-300">TBA</p>
+                    <p class="text-gray-400">TBA</p>
+                </div>
+                <div class="talent-card bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold text-purple-400">TBA</h3>
+                    <p class="text-gray-300">TBA</p>
+                    <p class="text-gray-400">TBA</p>
+                </div>
+                <div class="talent-card bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold text-purple-400">TBA</h3>
+                    <p class="text-gray-300">TBA</p>
+                    <p class="text-gray-400">TBA</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-900">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8">Join Our Cosmic Community</h2>
+            <p class="text-gray-300 mb-6">Connect with Astral Sovereignty for updates, collabs, or inquiries!</p>
+            <div class="flex justify-center space-x-4">
+                <a href="https://twitch.tv" target="_blank" class="text-purple-400 hover:text-purple-600">Twitch</a>
+                <a href="https://youtube.com" target="_blank" class="text-purple-400 hover:text-purple-600">YouTube</a>
+                <a href="https://twitter.com" target="_blank" class="text-purple-400 hover:text-purple-600">Twitter</a>
+                <a href="mailto:business@astralsovereignty.com" class="text-purple-400 hover:text-purple-600">Business Inquiries</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-4 text-center">
+        <p class="text-gray-400">&copy; 2025 Astral Sovereignty. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
