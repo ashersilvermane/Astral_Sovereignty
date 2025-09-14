@@ -31,20 +31,6 @@ Contact Links: Connects to Twitch, YouTube, Twitter, and a business inquiry emai
 
 Hover Effects: Interactive cards in the Knights section scale on hover for a dynamic user experience.
 
-
-Contributing
-
-Contributions are welcome! To contribute:
-
-
-Fork the repository.
-Create a new branch (git checkout -b feature/your-feature).
-Make your changes (e.g., update knight profiles, enhance styles, or add features).
-Commit your changes (git commit -m "Add your feature").
-Push to the branch (git push origin feature/your-feature).
-Open a pull request with a description of your changes.
-Please ensure code follows the existing structure and maintains the space-themed aesthetic. For major changes, open an issue first to discuss.
-
 License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
